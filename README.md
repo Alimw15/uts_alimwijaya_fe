@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Car Sales Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ini adalah **Sistem Manajemen Penjualan Mobil** yang dibangun dengan **React.js** untuk front-end dan **Express.js** dengan **Sequelize** untuk back-end. Sistem ini memungkinkan pengelolaan pelanggan, tenaga penjualan, pesanan, mobil, dan faktur, dengan operasi CRUD lengkap untuk masing-masing.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Customers**: Manage customer information (name, email, phone).
+- **Salespersons**: Manage sales staff information.
+- **Orders**: Manage sales orders and their associated details.
+- **Cars**: Manage car inventory.
+- **Invoices**: Manage invoices tied to orders.
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- **React.js**: For the front-end user interface.
+- **Axios**: For making HTTP requests to the back-end API.
+- **React Router**: For routing between different pages.
+- **CSS**: For styling the components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- **Node.js**: For running the back-end server.
+- **Express.js**: For creating RESTful APIs.
+- **Sequelize**: For database management and ORM.
+- **MySQL**: As the database.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- **Node.js** and **npm** installed on your machine.
+- **MySQL** installed and running.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### images
+<div align="center">
+  <img src="./src/img/image.png" alt="Customer" width="1200"/>
+</div> <br>
+<div align="center">
+  <img src="./src/img/image2.png" alt="Order" width="1200"/>
+</div> <br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/alimw15/uts_alimwijaya_fe.git
+   cd uts_alimwijaya_fe
