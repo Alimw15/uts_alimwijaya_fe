@@ -22,16 +22,16 @@
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    table-layout: fixed; /* Add this line to fix table layout */
+    table-layout: fixed;
   }
 
   th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #024CAA;
-    overflow: hidden; /* Add this line to hide overflow */
-    text-overflow: ellipsis; /* Add this line to show ellipsis for overflowing text */
-    white-space: nowrap; /* Add this line to prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   th {
@@ -39,8 +39,8 @@
     color: white;
   }
 
-  th:first-child{
-    width: 60px; /* Adjust this value to make ID and Actions columns smaller */
+  th:first-child {
+    width: 60px;
   }
 
   input, select {
@@ -64,26 +64,27 @@
   button {
     background-color: #091057;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 0.3rem;
     align-self: flex-end;
+    width: 4rem;
+    font-size: 0.9em;
   }
 
   button:hover {
     background-color: #024CAA;
   }
 
-  /* Add Customer button styles */
   .add-button {
     float: right;
     margin-bottom: 20px;
+    width: 10rem;
   }
 
-  /* Popup styles */
   .popup {
     position: fixed;
     top: 0;
@@ -94,6 +95,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
   }
 
   .popup-content {
@@ -103,23 +105,27 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 500px;
+    position: relative;
   }
 
   .popup h3 {
     margin-top: 0;
     color: #091057;
     font-size: 1.4em;
+    margin-bottom: 20px;
   }
 
   .popup form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
 
   .popup input, .popup select {
     margin-bottom: 15px;
     padding: 12px;
     font-size: 1.1em;
+    width: 100%;
   }
 
   .popup button {
@@ -127,6 +133,8 @@
     padding: 12px 24px;
     font-size: 1.1em;
     align-self: flex-end;
+    width: auto;
+    min-width: 120px;
   }
 
   .popup button[type="button"] {
